@@ -8,7 +8,7 @@ Final project for the Building AI course
 
 ## Summary
 # Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
-The project is about building a classifier to evaluate the correctness of the HS codes declared during the import into the state. The classifier uses the declared HS code and commodity description for correctness evaluation. Using the publicly available Universal Sentence Encoder and pre-trained Google sentence to vector model, the classifier can calculate the HS code based on the commodity description and then compare it with the declared HS.
+The project is about building a classifier to evaluate the correctness of the HS codes declared during the import into the state. The classifier uses the declared HS code and commodity description for evaluation of HS correctness. To translate commodity description (free-text sentence) to a vector, the classifier will use a pre-trained words embedding model provided by Google - GoogleNews-vectors-negative300.bin. With this word to vector (Word2Vector) model, the classifier can calculate the HS code based on the commodity description and then compare it with the declared HS.
 
 ## Background
 
