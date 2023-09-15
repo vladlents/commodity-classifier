@@ -20,8 +20,9 @@ The idea can help in solving multiple problems arising in relation to the import
 * help importers in selecting correct product group, that is HS code, from the the Harmonized System (HS) while declaring goods. 
 
 ## How is it used?
-The solution can be used by customs officers to evaluate the correctness of the declared HS code on a new incoming declaration using the textual description of goods provided by the importer. The correct HS code is important for correct customs duty calculation. The solution uses a pre-trained Google model for simplicity, which is further trained using goods descriptions from historical customs declarations. Then the model is used for evaluating the correctness of every new declaration    
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
+# Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
+
+The solution can be used by customs officers to evaluate the correctness of the declared HS code on a new incoming declaration using the textual description of goods provided by the importer. Since the HS code is is used for customs duty calculation, it is important to have HS code consistent with the goods description. For simplicity, the solution uses a pre-trained Word2Vector model provided by Google, which is further trained using goods descriptions from historical customs declarations. Then the trained model is used for evaluating the correctness of the declared HS code in every new declaration.    
 
 Images will make your README look nice!
 Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
