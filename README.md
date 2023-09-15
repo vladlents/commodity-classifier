@@ -17,10 +17,10 @@ The project is about building a classifier to evaluate the correctness of the HS
 The idea can help in solving multiple problems arising in relation to the importation of goods, in particular:
 * it can help prevent deliberate fraud on imported goods;
 * identify misdeclared goods due to unintended errors;
-* help importers in selecting correct product groups, HS codes, from the the Harmonized System (HS) while declaring goods. 
+* help importers in selecting correct product group, that is HS code, from the the Harmonized System (HS) while declaring goods. 
 
 ## How is it used?
-
+The solution can be used by customs officers to evaluate the correctness of the declared HS code on a new incoming declaration using the textual description of goods provided by the importer. The correct HS code is important for correct customs duty calculation. The solution uses a pre-trained Google model for simplicity, which is further trained using goods descriptions from historical customs declarations. Then the model is used for evaluating the correctness of every new declaration    
 Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
 
 Images will make your README look nice!
