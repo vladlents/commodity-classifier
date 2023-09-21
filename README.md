@@ -8,16 +8,17 @@ Final project for the Building AI course
 
 ## Summary
 # Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
-The project is about building a commodity classifier that will help assess the correctness of the declared HS code upon import into the country. The classifier is trained to predict the HS code using historical data about previously declared products. For each new declaration, it can predict the HS code based on the product description and then compare it with the declared one. 
+The project is about building a commodity classifier that will help assess the correctness of the declared HS (Harmonized System) code upon import into the country. The classifier is trained to predict the HS code using historical data about previously declared products. For each new declaration, it can predict the HS code based on the product description and then compare it with the declared one. 
 
 ## Background
 
 # Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
 
-The idea can help in solving multiple problems arising in relation to the importation of goods, in particular:
-* it can help prevent deliberate fraud on imported goods;
-* identify misdeclared goods due to unintended errors;
-* help importers in selecting correct product group, that is HS code, from the the Harmonized System (HS) while declaring goods. 
+This solution can help solve a number of problems that arise when importing goods, in particular:
+* to prevent deliberate fraud on imported goods;
+* to identify misdeclared goods due to unintended errors;
+* to help importers in selecting correct product group from the the Harmonized System (HS) while declaring goods;
+* to increase accuracy of product classification and improve compliance with customs regulations.
 
 ## How is it used?
 # Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
