@@ -8,7 +8,7 @@ Final project for the Building AI course
 
 ## Summary
 # Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
-The project is about building a commodity classifier that will help assess the correctness of the declared HS code upon import into the country at customs. The classifier is trained to predict the HS code using historical data about previously declared products. For each new declaration, it can predict the HS code based on product description and then compare it with the declared one. 
+The project is about building a commodity classifier that will help assess the correctness of the declared HS code upon import into the country. The classifier is trained to predict the HS code using historical data about previously declared products. For each new declaration, it can predict the HS code based on product description and then compare it with the declared one. 
 
 ## Background
 
