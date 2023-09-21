@@ -35,7 +35,7 @@ Once you upload an image to your repository, you can link link to it like this (
 ![Cat](https://github.com/vladlents/commodity-classifier/blob/main/HS-code-desc-example.png)
 
 If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
+<img src="https://github.com/vladlents/commodity-classifier/blob/main/HS-code-desc-example.png" width="300">
 
 This is how you create code examples:
 ```
