@@ -8,7 +8,7 @@ Final project for the Building AI course
 
 ## Summary
 # Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
-The project is about building a classifier to evaluate the correctness of the HS codes declared during the import into the state. The classifier uses the declared HS code and commodity description for evaluation of HS correctness. To translate commodity description (free-text sentence) to a vector, the classifier will use a pre-trained words embedding model provided by Google - GoogleNews-vectors-negative300.bin (https://www.kaggle.com/sandreds/googlenewsvectorsnegative300). With this word to vector (Word2Vector) model, the classifier can calculate the HS code based on the commodity description and then compare it with the declared HS.
+The project is about building a commodity classifier that will help assess the correctness of the HS code upon import into the country declared at customs. The classifier is trained to predict the HS code using historical data about previously declared products. For each new declaration, it can predict the HS code based on product description and then compare it with the declared one. 
 
 ## Background
 
@@ -23,6 +23,8 @@ The idea can help in solving multiple problems arising in relation to the import
 # Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
 
 The solution can be used by customs officers to evaluate the correctness of the declared HS code on a new incoming declaration using the textual description of goods provided by the importer. Since the HS code is is used for customs duty calculation, it is important to have HS code consistent with the goods description. For simplicity, the solution uses a pre-trained Word2Vector model provided by Google, which is further trained using goods descriptions from historical customs declarations. Then the trained model is used for evaluating the correctness of the declared HS code in every new declaration.    
+
+To translate the product description (free-text sentence) into a vector, the classifier will use a pre-trained embedding model provided by Google: GoogleNews-vectors-negative300.bin (https://www.kaggle.com/sandreds/googlenewsvectorsnegative300). With this word to vector (Word2Vector) model, the classifier can calculate the HS code based on the commodity description and then compare it with the declared HS.
 
 Images will make your README look nice!
 Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
