@@ -23,9 +23,11 @@ This solution can help solve a number of problems that arise when importing good
 ## How is it used?
 # Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
 
+Technically, the solution needs to translate the product description (free-text sentence) into a numeric vector, which can be used by the classifier. For this purpose, the classifier will use a pre-trained embedding model provided by Google: GoogleNews-vectors-negative300.bin (https://www.kaggle.com/sandreds/googlenewsvectorsnegative300). With this word to vector (Word2Vector) model, the classifier can calculate the HS code based on the commodity description and then compare it with the declared HS.
+
 The solution can be used by customs officers to evaluate the correctness of the declared HS code on a new incoming declaration using the textual description of goods provided by the importer. Since the HS code is used for customs duty calculation, it is important to have HS code consistent with the goods description. For simplicity, the solution uses a pre-trained Word2Vector model provided by Google, which is further trained using goods descriptions from historical customs declarations. Then the trained model is used for evaluating the correctness of the declared HS code in every new declaration.    
 
-To translate the product description (free-text sentence) into a vector, the classifier will use a pre-trained embedding model provided by Google: GoogleNews-vectors-negative300.bin (https://www.kaggle.com/sandreds/googlenewsvectorsnegative300). With this word to vector (Word2Vector) model, the classifier can calculate the HS code based on the commodity description and then compare it with the declared HS.
+
 
 Images will make your README look nice!
 Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
