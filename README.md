@@ -18,7 +18,7 @@ This solution can help solve a number of problems that arise when importing good
 * to prevent deliberate fraud on imported goods;
 * to identify misdeclared goods due to unintended errors;
 * to help importers in selecting correct product group from the the Harmonized System (HS) while declaring goods;
-* to increase accuracy of product classification and improve compliance with customs regulations.
+* to increase accuracy of product classification, optimize supply chains and improve compliance with customs regulations.
 
 ## How is it used?
 # Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
