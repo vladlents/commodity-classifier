@@ -32,7 +32,7 @@ The solution can be used by customs officers to assess the correctness of the de
 
 Images will make your README look nice!
 Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://github.com/vladlents/commodity-classifier/blob/main/HS-code-desc-example.png)
+![HS_codes](https://github.com/vladlents/commodity-classifier/blob/main/HS-code-desc-example.png)
 
 If you need to resize images, you have to use an HTML tag, like this:
 <img src="https://github.com/vladlents/commodity-classifier/blob/main/HS-code-desc-example.png" width="400">
