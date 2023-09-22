@@ -28,10 +28,6 @@ The motivating factors are to share knowledge about possible practical applicati
 
 In practice, the solution can be used by customs brokers or other importing actors to select the correct HS code group for their product on a declaration or invoice. It will work by using the trained Word2Vector model from one hand and the textual description of goods provided by the consignor from another hand. Since the HS code is used for calculation of customs duties and regulatory compliance, it is crucial for the importer to have the HS code correctly declared and consistent with the goods description. 
 
-Since computers can process data in digital format only, the solution needs to translate product descriptions (free-text sentences) into numeric vectors. This method is known as word to vector (Word2Vector). For this purpose, the solution will use a pre-trained word embedding model provided by Google. 
-Then it will count the number of clusters formed by the vectors in the same HS code group and calculate a central vector for each cluster. The central vector represents the arithmetic mean of product descriptions belonging to the cluster. For simplicity, we will consider one cluster per HS code group. As a result, we will get a model that is a table containing vectors associated with groups of HS codes.   
-With the computed Word2Vector model, for each newly declared product, the classifier can calculate the vector based on the commodity description and then compare it with vectors in the table to find similarities. Then it decides on the nearest HS code in the table and suggessts it to the importer. This case is limited to product descriptions coming in Enlish language but the same principle can work for other languages. 
-
 This is how you create code examples:
 ```
 def main():
@@ -51,6 +47,9 @@ main()
 ```
 
 ## Data sources and AI methods
+Since computers can process data in digital format only, the solution needs to translate product descriptions (free-text sentences) into numeric vectors. This method is known as word to vector (Word2Vector). For this purpose, the solution will use a pre-trained word embedding model provided by Google. 
+Then it will count the number of clusters formed by the vectors in the same HS code group and calculate a central vector for each cluster. The central vector represents the arithmetic mean of product descriptions belonging to the cluster. For simplicity, we will consider one cluster per HS code group. As a result, we will get a model that is a table containing vectors associated with groups of HS codes.   
+With the computed Word2Vector model, for each newly declared product, the classifier can calculate the vector based on the commodity description and then compare it with vectors in the table to find similarities. Then it decides on the nearest HS code in the table and suggessts it to the importer. 
 The solution uses two data sources: a pre-trained Word2Vector model provided by Google and a dataset containing product descriptions with HS codes from past customs declarations. 
 :  
 [GoogleNews-vectors-negative300.bin](https://www.kaggle.com/sandreds/googlenewsvectorsnegative300).
@@ -71,6 +70,8 @@ Below is a snapshot of a typical historical data set available from a customs st
 ## Challenges
 
 What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+
+This case is limited to product descriptions coming in Enlish language but the same principle can work for other languages. 
 
 ## What next?
 
