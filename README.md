@@ -8,7 +8,7 @@ Final project for the Building AI course
 
 ## Summary
 # Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
-The project is about building a commodity classifier that will help the importer select the correct Harmonized System (HS) code upon import into the country. The classifier is trained to predict the HS code using historical data about previously declared products. For each new product, it can predict the HS code based on the product description. 
+The project is about building a commodity classifier that will help the importer select the correct [Harmonized System (HS) code](https://www.trade.gov/harmonized-system-hs-codes) upon import into the country. The classifier is trained to predict the HS code using historical data about previously declared products. For each new product, it can predict the HS code based on the product description. 
 
 ## Background
 
@@ -28,7 +28,6 @@ The motivating factors are to share knowledge about possible practical applicati
 
 Since computers can process data in digital format only, the solution needs to translate historical product descriptions (free-text sentences) into numeric vectors. This method is known as word to vector (Word2Vector). For this purpose, the solution will use a pre-trained word embedding model provided by Google. 
 Then it will count the number of clusters formed by the vectors in the same HS code group and calculate a central vector for each cluster. The central vector represents the arithmetic mean of product descriptions belonging to the cluster. For simplicity, we will consider one cluster per HS code group. As a result, we will get a model that is a table containing vectors associated with groups of HS codes.   
-[Harmonized System (HS) Codes](https://www.trade.gov/harmonized-system-hs-codes)
 With the computed Word2Vector model, for each newly declared product, the classifier can calculate the vector based on the commodity description and then compare it with vectors in the table to find similarities. Then it decides on the nearest HS code in the table and suggessts it to the importer. This case is limited to product descriptions coming in Enlish language but the same principle can work for other languages. 
 
 In practice, the solution can be used by customs brokers or other importing actors to select the correct HS code group for their product on a declaration or invoice. It will work by using the trained Word2Vector model from one hand and the textual description of goods provided by the consignor from another hand. Since the HS code is used for calculation of customs duties and regulatory compliance, it is crucial for the importer to have the HS code correctly declared and consistent with the goods description. 
