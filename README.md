@@ -12,7 +12,7 @@ The project is about building a commodity classifier that will help the importer
 
 ## Background
 
-### Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+#### Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
 
 This solution can help solve a number of problems that arise when importing goods, in particular:
 * to help importers in selecting correct product group from the the Harmonized System (HS) while declaring goods;
@@ -24,7 +24,7 @@ This solution can help solve a number of problems that arise when importing good
 The motivating factors are to share knowledge about possible practical applications of innovative machine learning techniques in traditional industries and support the learning process.  
 
 ## How is it used?
-# Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
+#### Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
 
 In practice, the solution can be used by customs brokers or other importing actors to select the correct HS code group for their product on a declaration or invoice. It will work by using the trained Word2Vector model from one hand and the textual description of goods provided by the consignor from another hand. Since the HS code is used for calculation of customs duties and regulatory compliance, it is crucial for the importer to have the HS code correctly declared and consistent with the goods description. 
 
