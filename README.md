@@ -7,12 +7,12 @@ Copy the template, paste it to your GitHub README and edit! -->
 Final project for the Building AI course
 
 ## Summary
-# Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
+### Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
 The project is about building a commodity classifier that will help the importer select the correct [Harmonized System (HS) code](https://www.trade.gov/harmonized-system-hs-codes) upon import into the country. The classifier is trained to predict the HS code using historical data about previously declared products. For each new product, it can predict the HS code based on the product description. 
 
 ## Background
 
-#### Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+### Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
 
 This solution can help solve a number of problems that arise when importing goods, in particular:
 * to help importers in selecting correct product group from the the Harmonized System (HS) while declaring goods;
@@ -24,7 +24,7 @@ This solution can help solve a number of problems that arise when importing good
 The motivating factors are to share knowledge about possible practical applications of innovative machine learning techniques in traditional industries and support the learning process.  
 
 ## How is it used?
-#### Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
+### Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
 
 In practice, the solution can be used by customs brokers or other importing actors to select the correct HS code group for their product on a declaration or invoice. It will work by using the trained Word2Vector model from one hand and the textual description of goods provided by the consignor from another hand. Since the HS code is used for calculation of customs duties and regulatory compliance, it is crucial for the importer to have the HS code correctly declared and consistent with the goods description. 
 
@@ -63,7 +63,7 @@ Providers of customs statistics include government agencies, international organ
 
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+### What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
 
 This case is limited to product descriptions coming in Enlish language but the same principle can work for other languages. 
 
