@@ -12,7 +12,7 @@ The project is about building a commodity classifier that will help the importer
 
 ## Background
 
-# Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+### Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
 
 This solution can help solve a number of problems that arise when importing goods, in particular:
 * to help importers in selecting correct product group from the the Harmonized System (HS) while declaring goods;
